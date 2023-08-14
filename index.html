@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Application Form</title>
+</head>
+<body>
+ 
+   
+        <div class="container">
+            <form action="#" method="get">
+            <form action="#" method="get">
+                <h1>Payment Form</h1>
+                <hr>
+                <h2>User Information</h2>
+                <div class="row">
+                    <div class="col-6">
+                <label for="firstname" class="form-label">FirstName*</label>
+                <input type="text" id="firstname" class="form-control" required>
+            </div>
+            <div class="col-6">
+                <label for="lastname" class="form-label">LastName*</label>
+                <input type="text" id="lastname" class="form-control" required>
+            </div>
+            </div>
+            
+
+            <fieldset class="field-set">
+                <legend>Gender</legend>
+                <input class="form-check-input mt-0" type="radio" value="" id="male" name="Gender"> Male
+                <input class="form-check-input mt-0" type="radio" value="" id="Female" name="Gender"> Female
+            </fieldset>
+        
+            <p>
+                Address:
+            </p>
+                <textarea placeholder="Enter your address" name="address" id="address" class="form-control text-area"></textarea>
+            
+            <div class="row">
+                <div class="col-6">
+                    <label for="email" class="form-label">Email*</label>
+                    <input type="email" id="email"  class="form-control" required>
+                </div>
+
+                <div class="col-6">
+                    <label for="pincode" class="form-label">Pincode*</label>
+                    <input type="number" id="pincode"  class="form-control" required>
+                </div>
+            </div>
+            </form>
+            <hr>
+
+            <form action="#" method="get">
+            <h1>Payment Information</h1>
+            <div class="row"> 
+                <div class="col-6">
+            <div class="dropdown">
+                <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+                <button onclick="myFunction()" class="btn btn-secondary dropdown-toggle dropbtn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                  </button>
+                <div id="myDropdown" class="dropdown-content dropdown-list">
+                  <a href="#home">Home</a>
+                  <a href="#about">About</a>
+                  <a href="#contact">Contact</a>
+                </div>
+              </div>
+              </div>
+              <div class="col-6">
+                <label for="card-number" class="form-label">Card Number*</label>
+                    <input type="number" id="card-number"  class="form-control" required>
+              </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                    <label for="birthday">Date-of-expiry</label>
+                    <input type="date" id="birthday" class="form-control" required>
+                </div>
+
+                <div class="col-6">
+                    <label for="cvv">CVV</label>
+                    <input type="number" id="cvv" class="form-control" minlength="1" maxlength="3" required> 
+                </div>
+
+              </div>
+              <div class="paynow-btn">
+                <button type="submit" class="btn btn-secondary paynow-btn2"> Pay Now</button>
+              </div>
+
+             <!--row closing div-->
+            
+ 
+            </form>
+            <hr>
+            <div class="submit-btn2">
+                
+                    <button type="submit" class="btn btn-success paynow-btn2">Submit</button>
+                
+            </div>
+        </form>
+
+        </div>
+
+        
+    
+<script>
+    function myFunction(){
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+   
+
+  
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

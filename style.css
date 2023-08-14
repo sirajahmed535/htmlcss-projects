@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 40px 40px 40px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+h1, h2, .row,.field-set,.text-area{
+    margin-bottom: 16px;
+}
+h1{
+    text-align: center;
+}
+
+.text-area{
+    height: 130px !important;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+  .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 630px;
+    margin-top: 13px;
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .paynow-btn{
+    margin-bottom: 20px;
+  }
+
+  .paynow-btn2{
+    width: 150px;
+    height: 50px;
+  }
+.submit-btn2{
+    text-align: center;
+}
+
+.dropdown-list{
+    position: relative;
+}
